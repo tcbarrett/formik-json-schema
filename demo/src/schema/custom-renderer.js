@@ -1,20 +1,8 @@
 import CustomText from '../components/CustomText';
 
+import schema from 'custom-renderer.json';
+
 export default {
     initialValues: {},
-    schema: {
-        id: "custom-renderer",
-        label: "Custom Renderer",
-        type: "container",
-        renderer: "form",
-        elements: {
-            customField: {
-                name: "customField",
-                label: "Custom text field",
-                type: "field",
-                renderer: CustomText,
-                fieldType: "text"
-            }
-        }
-    }
+    schema: schema
 }
